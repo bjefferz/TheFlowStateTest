@@ -8,6 +8,25 @@ nav {
     background-color: #deebf7;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+footer {
+    background-color: #08306b;
+    color: #f7fbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer section {
+    padding: 0 2em;
+}
+
 .nav {
     display: flex;
     justify-content: center; /* horrizontal */
@@ -33,6 +52,8 @@ nav {
     padding: 15px 0px;
 }
 
-footer {
-    background-color: #08306b;
+.footer.footer-center{
+    flex-direction: column;
+    color: #f7fbff;
 }
+
