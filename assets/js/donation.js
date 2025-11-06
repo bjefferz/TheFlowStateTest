@@ -35,7 +35,7 @@ oneTimeButton.addEventListener('click', () =>
   showSection(oneTimeButton, oneTimeOptions)
 );
 
-// ✅ initialize with Monthly highlighted and shown
+// initialize page with the Monthly highlighted and shown
 window.addEventListener('DOMContentLoaded', () => {
   showSection(monthlyButton, monthlyOptions);
 });
