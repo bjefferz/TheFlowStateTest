@@ -1,23 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donation</title>
-</head>
-<body>
+
+    <link rel="stylesheet" href="assets/css/donation.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <header>Header soon to be implemented</header>
+
+  <body>
     <h1>Make a Donation</h1>
-    <form action="REPLACE_LATER" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <section class="donation-section">
+      <div class="donation-frequency">
+        <button
+          class="donation-frequency-button"
+          id="donation-frequency-monthly"
+        >
+          Monthly
+        </button>
+        <button
+          class="donation-frequency-button"
+          id="donation-frequency-yearly"
+        >
+          Yearly
+        </button>
+        <button
+          class="donation-frequency-button"
+          id="donation-frequency-onetime"
+        >
+          One-Time
+        </button>
+      </div>
 
-        <label for="amount">Donation Amount:</label>
-        <input type="number" id="amount" name="amount" required>
+      <div class="donation-options">
+        <!-- Donation Options-Monthly-->
+        <div class="monthly-options" id="monthly-options">
+          <button class="donation-option-button">$10</button>
+          <button class="donation-option-button">$25</button>
+          <button class="donation-option-button">$50</button>
+          <button class="donation-option-button">$100</button>
+          <button class="donation-option-button">Custom Amount</button>
+        </div>
 
-        <button type="submit">Donate</button>
-    </form>
-</body>
+        <div class="yearly-options" id="yearly-options">
+          <button class="donation-option-button">$100</button>
+          <button class="donation-option-button">$250</button>
+          <button class="donation-option-button">$500</button>
+          <button class="donation-option-button">$1000</button>
+          <button class="donation-option-button">Custom Amount</button>
+        </div>
+
+        <div class="one-time-options" id="one-time-options">
+          <button class="donation-option-button">$20</button>
+          <button class="donation-option-button">$50</button>
+          <button class="donation-option-button">$100</button>
+          <button class="donation-option-button">$200</button>
+          <button class="donation-option-button">Custom Amount</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/donation.js"></script>
+  </body>
+
+  <footer> Footer soon to be implemented</footer>
 </html>
