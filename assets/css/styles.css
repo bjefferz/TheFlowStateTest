@@ -1,7 +1,7 @@
 body {
-    background-color: #f7fbff;
-    margin: 0;
-    padding: 0;
+  background-color: #f7fbff;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -54,9 +54,9 @@ footer section {
     object-fit: cover;
 }
 
-.nav a:hover{
-    text-decoration: underline #08306b 2px;
-    text-underline-offset: 5px;
+.nav a:hover {
+  text-decoration: underline #08306b 2px;
+  text-underline-offset: 5px;
 }
 
 .nav.nav-bottom a{
@@ -93,9 +93,26 @@ footer section {
     text-underline-offset: 5px;
 }
 
+.contact-body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(#f7fbff, #6baed6);
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#contact-page-main-img {
+  width: 30%;
+}
+
 /* 769-1297 */
 
 /* 481-768 */
 
 /* 0-480 */
-
