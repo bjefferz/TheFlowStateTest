@@ -13,18 +13,21 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2em 0;
+    height: 1000px;
 }
 
 footer {
-    background-color: #08306b;
+    background-image: url("../Images/waterfooter.png");
+    background-size: cover;
     color: #f7fbff;
-    display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 400px;
+    padding: 10em 0;
 }
 
 footer section {
-    padding: 0 2em;
+    padding: 0 7em; /* spacing between footer columns */
 }
 
 .nav {
@@ -52,4 +55,32 @@ footer section {
     padding: 15px 0px;
 }
 
+.footer-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 17em;
+}
+
+.footer-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.footer-pages a{
+    text-decoration: none;
+    color: #deebf7;
+}
+
+.footer-pages a:hover{
+    text-decoration: underline #deebf7 2px;
+    text-underline-offset: 5px;
+}
+
+/* 769-1297 */
+
+/* 481-768 */
+
+/* 0-480 */
 
