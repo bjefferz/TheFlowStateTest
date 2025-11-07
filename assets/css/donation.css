@@ -1,0 +1,31 @@
+.donation-frequency {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.donation-options {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.donation-frequency-button {
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #bebebe;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.donation-frequency-button:hover,
+.donation-frequency-button:focus {
+  background-color: #0762ff;
+}
+
+.donation-frequency-button.active {
+  background-color: #0762ff;
+}
