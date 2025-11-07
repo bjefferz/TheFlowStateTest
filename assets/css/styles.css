@@ -5,24 +5,25 @@ body {
 }
 
 header {
+    position: fixed;
     background-color: #f7fbff;
     display: flex;
     justify-content: space-between; /* horrizontal */
     align-items: center;  /* vertical */
     padding: 0 5em;
+    width: 100vw;
     height: 75px;
+    box-sizing: border-box;
     box-shadow: 0 4px 6px -2px rgba(0,0,0,0.2);
 }
 
-/* nav {
-    background-color: #f7fbff;
-} */
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    padding-top: 75px;
+    /* padding: 2em 0; */
     height: 1000px;
 }
 
@@ -42,6 +43,8 @@ footer section {
 
 .nav a{
     text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
     color: #08306b;
     /* gap: 2em; */
 }
