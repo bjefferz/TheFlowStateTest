@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <title>About | The Flow State</title>
 </head>
 <body>
+    <!-- JS Link -->
+    <script src="/assets/js/scripts.js"></script>
 
+    <header>
+        <nav class = "nav nav-top">
+            <a class = "logo-btn" href = "index.html">
+                <img src="/assets/Images/TheFlowState.png" alt = "Home"></a>
+        </nav>
+
+        <nav class = "nav nav-bottom">
+            <a href="/pages/About.html">About</a>
+            <a href="/pages/connect.html">Connect</a>
+            <a href="/pages/donation.html">Donate</a>
+            <a href="/pages/resources.html">Resources</a>
+        </nav>
+
+    </header>
     <!--Headerish Section-->
-    <section class="about-header">
+    <section class="about-page-header">
         <h1>About The Flow State</h1>
         <p class="subtitle">Learn more about our work, mission and history.</p>
     </section>
@@ -37,24 +57,30 @@
         <h2>Meet Our Team</h2>
         <ul class="team-list">
             <li id="Brendan">
-                <img class="headshot" src="" alt="Headshot of Brendan">
-                <p><strong>Brendan J.</strong> - “We’re not just testing wells; we’re rebuilding confidence and community health."</p>
+                <img class="headshot" src="/assets/Images/Brendan_Jefferson.jpg" alt="Headshot of Brendan">
+                <p><strong>Brendan J.</strong></p>
+                <p>“We’re not just testing wells; we’re rebuilding confidence and community health."
+                </p>
             </li>
             <li id="Christine">
-                <img class="headshot" src="" alt="Headshot of Christine">
-                <p><strong>Christine C.</strong> - “Our work reminds me that clean water isn’t a luxury; it’s a human right. Every filter we install is one less family worrying about their next glass.”</p>
+                <img class="headshot" src="/assets/Images/Christine_Chee.jpg" alt="Headshot of Christine">
+                <p><strong>Christine C.</strong></p>
+                <p>“Our work reminds me that clean water isn’t a luxury; it’s a human right. Every filter we install is one less family worrying about their next glass.”</p>
             </li>
             <li id="Jessica">
-                <img class="headshot" src="" alt="Headshot of Jessica">
-                <p><strong>Jessica C.</strong> - “Seeing residents test their water for the first time and learn it’s safe again—it’s the best part of what we do.”</p>
+                <img class="headshot" src="/assets/Images/Jessica_Cruz.jpg" alt="Headshot of Jessica">
+                <p><strong>Jessica C.</strong></p>
+                <p>“Seeing residents test their water for the first time and learn it’s safe again—it’s the best part of what we do.”</p>
             </li>
             <li id="Marilyn">
-                <img class="headshot" src="" alt="Headshot of Marilyn">
-                <p><strong>Marilyn C.</strong> - “The Flow State started as an idea about equity. It became a movement about dignity and connection.”</p>
+                <img class="headshot" src="/assets/Images/Marilyn_Castro.jpg" alt="Headshot of Marilyn">
+                <p><strong>Marilyn C.</strong></p>
+                <p>“The Flow State started as an idea about equity. It became a movement about dignity and connection.”</p>
             </li>
             <li id="Tommy">
-                <img class="headshot" src="" alt="Headshot of Tommy">
-                <p><strong>Tommy N.</strong> - “We’ve seen firsthand how one small change, like a clean water source can ripple through an entire town.”</p>
+                <img class="headshot" src="/assets/Images/Tommy-Nam_Nguyen.jpg" alt="Headshot of Tommy">
+                <p><strong>Tommy N.</strong></p>
+                <p>“We’ve seen firsthand how one small change, like a clean water source can ripple through an entire town.”</p>
             </li>
         </ul>
     </section>
@@ -73,6 +99,32 @@
                     “I used to buy cases of water every week. After they installed a certified filter, my grocery bill dropped and my anxiety about my well went away.” — Miguel R., Shallotte (Brunswick County).
                 </li>
             </ul>
+            <div class="slide-controls">
+                <button class="slide-btn" id="prev"> Prev</button>
+                <button class="slide-btn" id="next">Next </button>
+            </div>
     </section>
+    <footer>
+        <div class = "footer-flexbox">
+            <section class = "footer footer-logo">
+                <h1>The Flow State</h1>
+                <!-- Tagline -->
+                <h5>"Keeping NC in Flow"</h5>
+            </section>
+
+            <section class = "footer footer-pages">
+                <h2>Pages</h2>
+                <a href = "pages/About.html">About</a>
+                <a href = "pages/connect.html">Connect</a>
+                <a href = "pages/donation.html">Donate</a>
+                <a href = "pages/resources.html">Resources</a>
+            </section>
+
+            <section class = "footer footer-socials">
+                <h2>Find us on...</h2>
+            </section>
+        </div>
+
+    </footer>
 </body>
 </html>
