@@ -112,7 +112,9 @@ footer section {
   width: 30%;
 }
 
-/* ---ABOUT PAGE STYTLING--- */
+/* --- START OF ABOUT PAGE STYTLING--- */
+
+/* About Page Header */
 .about-page-header {
   background: linear-gradient(135deg, #6baed6, #4292c6);
   color: #f7fbff;
@@ -128,13 +130,15 @@ footer section {
   font-weight: 700;
   letter-spacing: 1px;
 }
+
 .about-page-header .subtitle {
   font-size: 1.2em;
   color: #deebf7;
   margin: 0;
   
 }
-/* MISSION STATEMENT SECTION*/
+
+/* MISSION STATEMENT SECTION */
   .mission-statement {
     background: linear-gradient(135deg, #deebf7, #c6dbef);
     color: #08306b;
@@ -160,7 +164,8 @@ footer section {
     line-height: 1.7;
     color: #08519c;
   }
-/* ABOUT DETAILS (Who we are) SECTION */
+
+/* ABOUT DETAILS SECTION (Who We Are) */
 .about-details {
   background-color: #f7fbff;
   color: #08306b;
@@ -186,7 +191,7 @@ footer section {
   color: #08306b;
 }
 
-/*TEAM SECTION*/
+/* TEAM SECTION */
 .team {
   text-align: center;
   padding: 4em 2em;
@@ -237,12 +242,13 @@ ul li {
   border-radius: 15px;
   margin-bottom: 0.8em;
 }
+
 .team-list p {
   font-size: 0.95em;
   line-height: 1.4;
 }
 
-/* TESTIMONIAL SLIDESHOW */
+/* TESTIMONIAL SLIDESHOW SECTION*/
 .testimonial-slideshow {
   background-color: #c6dbef;
   padding: 4em 2em;
@@ -266,6 +272,7 @@ ul li {
   max-width: 700px;
   height: 120px;
 }
+
 .testimony {
   display: none;
   position: absolute;
@@ -277,18 +284,20 @@ ul li {
   color: #08306b;
   font-style: italic;
 }
+
 /* Shows the active testimony slide */
 .testimony.active {
   display: block;
   animation: fade 2s ease-in-out;
 }
+
 /* Fade transition */
 @keyframes fade {
   from {opacity: 0; }
   to {opacity: 1; } 
 }
 
-/*Buttons*/
+/* Slideshow Controls */
 .slide-controls {
   margin-top: 2em;
 }
@@ -307,6 +316,9 @@ ul li {
 .slide-btn:hover {
   background-color: #0056b3;
 }
+
+/*END OF ABOUT PAGE STYLING*/
+
 /* 769-1297 */
 
 /* 481-768 */
