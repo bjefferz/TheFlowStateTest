@@ -1,3 +1,4 @@
+// Frequency Button Handling
 const monthlyButton = document.getElementById('donation-frequency-monthly');
 const yearlyButton = document.getElementById('donation-frequency-yearly');
 const oneTimeButton = document.getElementById('donation-frequency-onetime');
@@ -5,6 +6,9 @@ const oneTimeButton = document.getElementById('donation-frequency-onetime');
 const monthlyOptions = document.getElementById('monthly-options');
 const yearlyOptions = document.getElementById('yearly-options');
 const oneTimeOptions = document.getElementById('one-time-options');
+
+let selectedFrequency = null;
+let selectedAmount = null;
 
 function hideAllOptions() {
   monthlyOptions.style.display = 'none';
@@ -21,8 +25,18 @@ function removeActiveClasses() {
 function showSection(button, section) {
   hideAllOptions();
   removeActiveClasses();
+
+  document
+    .querySelectorAll('.donation-option-button')
+    .forEach(btn => btn.classList.remove('active'));
+
+  selectedAmount = null;
+
   section.style.display = 'block';
   button.classList.add('active');
+
+  selectedFrequency = button.textContent.trim();
+  console.log("Selected frequency:", selectedFrequency);
 }
 
 monthlyButton.addEventListener('click', () =>
@@ -35,40 +49,68 @@ oneTimeButton.addEventListener('click', () =>
   showSection(oneTimeButton, oneTimeOptions)
 );
 
-// initialize page with the Monthly highlighted and shown. This is the default landing state.
 window.addEventListener('DOMContentLoaded', () => {
   showSection(monthlyButton, monthlyOptions);
 });
 
-// transform "Custom Amount" button into input on click
+
+// Donation Amount Selection
+document.querySelectorAll('.donation-option-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const parentGrid = button.closest('.donation-grid');
+    parentGrid.querySelectorAll('.donation-option-button')
+      .forEach(btn => btn.classList.remove('active'));
+
+    button.classList.add('active');
+
+    selectedAmount = button.textContent.replace('$', '').trim();
+    console.log("Selected amount:", selectedAmount);
+  });
+});
+
+
+// Custom Amount Handling
 document.querySelectorAll('.custom-amount').forEach(button => {
   button.addEventListener('click', () => {
-    // Remove active class from all buttons
-    document.querySelectorAll('.donation-option-button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.donation-option-button')
+      .forEach(btn => btn.classList.remove('active'));
 
-    // Create input
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('custom-amount-wrapper', 'active');
+
+    const dollar = document.createElement('span');
+    dollar.classList.add('custom-amount-symbol');
+    dollar.textContent = '$';
+
     const input = document.createElement('input');
     input.type = 'number';
     input.placeholder = 'Enter amount';
     input.min = '1';
     input.classList.add('custom-amount-input');
 
-    // Replace button with input
-    button.replaceWith(input);
+    wrapper.appendChild(dollar);
+    wrapper.appendChild(input);
 
-    // Focus the input immediately
+    button.replaceWith(wrapper);
     input.focus();
 
-    // When user leaves the field and it’s empty, revert back to button
+    input.addEventListener('input', () => {
+      selectedAmount = input.value;
+      console.log("Selected custom amount:", selectedAmount);
+    });
+
     input.addEventListener('blur', () => {
       if (input.value.trim() === '') {
+        wrapper.classList.remove('active');
+        selectedAmount = null;
+
         const newButton = document.createElement('button');
         newButton.className = 'donation-option-button custom-amount';
         newButton.textContent = 'Custom Amount';
-        input.replaceWith(newButton);
+        wrapper.replaceWith(newButton);
 
         newButton.addEventListener('click', () => {
-          newButton.replaceWith(input);
+          newButton.replaceWith(wrapper);
           input.focus();
         });
       }

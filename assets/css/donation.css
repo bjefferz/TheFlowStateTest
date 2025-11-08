@@ -1,3 +1,18 @@
+/* =========================
+   Donation Section Layout
+   ========================= */
+.donation-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.donation-paragraph {
+  display: block;
+  text-align: center;
+}
+
+/* Frequency Button Styling */
 .donation-frequency {
   display: flex;
   justify-content: center;
@@ -5,7 +20,6 @@
 }
 
 .donation-options {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -17,24 +31,22 @@
   border: none;
   border-radius: 8px;
   background-color: #bebebe;
-  color: white;
+  color: black;
   transition: background-color 0.3s;
 }
 
 .donation-frequency-button:hover,
 .donation-frequency-button:focus {
   background-color: #0762ff;
+  color: white;
 }
 
 .donation-frequency-button.active {
   background-color: #0762ff;
+  color: white;
 }
 
-.donation-paragraph {
-  display: block;
-  text-align: center;
-}
-
+/* Donation Options Grid */
 .monthly-options,
 .yearly-options,
 .one-time-options {
@@ -47,29 +59,27 @@
 
 .donation-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(2, 150px);
+  gap: 5px;
   justify-content: center;
   margin-bottom: 20px;
-  width: fit-content;
 }
 
+/* Donation Option Buttons */
 .donation-option-button {
   padding: 15px 25px;
   font-size: 20px;
-  border: 2px solid #bebebe;
   border-radius: 10px;
-  background-color: #f8f8f8;
+  border: none;
+  background-color: #bebebe;
   color: black;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: 120px;
 }
 
 .donation-option-button:hover {
   background-color: #0762ff;
   color: white;
-  border-color: #0762ff;
 }
 
 .donation-option-button.active {
@@ -77,20 +87,40 @@
   color: white;
 }
 
-.custom-amount-input {
-  padding: 13px 20px;
-  font-size: 20px;
-  border: 2px solid #0762ff;
-  border-radius: 10px;
-  text-align: center;
-  width: 150px;
-  outline: none;
-  transition: border-color 0.3s, box-shadow 0.3s;
+.donation-option-button.custom-amount {
+  grid-column: 1 / -1;
 }
 
-.custom-amount-input:focus {
+/* Custom Amount Input */
+.custom-amount-wrapper {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / -1;
+  width: 100%;
+  border: 2px solid #0762ff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.custom-amount-wrapper:focus-within {
   border-color: #004ad9;
   box-shadow: 0 0 5px #0762ff;
+}
+
+.custom-amount-symbol {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #0762ff;
+}
+
+.custom-amount-input {
+  flex: 1;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  box-sizing: border-box;
 }
 
 .custom-amount-input::-webkit-outer-spin-button,
