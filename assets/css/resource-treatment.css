@@ -56,57 +56,6 @@ main {
     height: 1000px;
 }
 
-.threearticle-container{
-
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-
-
-}
-.BoxArticle {
-    text-align: center;
-    background-color: #e7f1fa;
-    border-radius: 10px;
-    vertical-align: top;
-    max-width: 335px;
-    overflow: hidden;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.AImage { display:block; }
- .AImage img {
-  /* width: 100%; */
-  border-radius: 10px;
-  display: block;
-  margin-bottom: 10px;
-  aspect-ratio: 1/1;
- }
-
-.BoxArticle p{
-    font-size: 16px;
-    padding: 20px;
-} 
-
-.BoxArticle:hover {
-    transform: scale(1.1) translateY(-10px);
-    box-shadow: 0 20px 50px #f7fbff(0.35,0); 
-}
-.Abt{
-    color: #08306b;
-    background-color: #f7fbff;
-    border: 1px solid #08306b;
-    border-radius: 8px;
-    padding: 7px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
 
 
 
