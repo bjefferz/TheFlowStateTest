@@ -117,3 +117,21 @@ document.querySelectorAll('.custom-amount').forEach(button => {
     });
   });
 });
+
+// Donate Button Handling
+const donateButton = document.getElementById('donate-button');
+
+donateButton.addEventListener('click', () => {
+  if (!selectedFrequency || !selectedAmount) {
+    alert("Please select a frequency and amount before donating.");
+    return;
+  }
+
+  // log values
+  console.log("Donation submitted:");
+  console.log("Frequency:", selectedFrequency);
+  console.log("Amount:", selectedAmount);
+
+  // Later:
+  alert(`Thank you for your ${selectedFrequency} donation of $${selectedAmount}!`);
+});

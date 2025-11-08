@@ -128,3 +128,21 @@
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Donate Button */
+.donate-button {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 40px;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0762ff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #004ad9;
+}
