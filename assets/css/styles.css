@@ -109,6 +109,7 @@ footer section {
     background-image: url("../Images/hands-water.jpg");
     background-size: cover;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.767); /* x y blur spread */
+    /* z-index: 10; */
 }
 
 .motto-overlay {
@@ -127,9 +128,51 @@ footer section {
 }
 
 .home-container.about {
-    /* width: 100%; */
-    height: 800px;
+    background-color: #1d2022;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7fbff;
+    box-shadow: /* x y blur spread */
+        0 -15px 25px 25px #1d2022;   /* top shadow */
+        /* 0  15px 30px 50px #2f3538;   bottom shadow */
 }
+
+.about-overlay {
+    /* background-color: #c6dbef; */
+    text-align: center;
+    align-items: center;
+    width: 800px;
+    height: auto;
+    padding: 25px 40px;
+    border-radius: 12px;
+    /* box-shadow: 0px 0px 10px 10px rgba(98, 98, 98, 0.446); */
+}
+
+.about-overlay p{
+    font-size: 20px;
+}
+
+.about-overlay.about-btn {
+    color: #08306b;
+    background-color: #c6dbef;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 25px;
+}
+
+.about-overlay.about-btn:hover {
+    background-color: #9ecae1;
+}
+
+.home-container.spacing {
+    width: 100%;
+    height: 400px;
+}
+
+
 
 .contact-body {
   padding: 0;
