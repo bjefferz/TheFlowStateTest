@@ -1,10 +1,13 @@
-/* =========================
-   Donation Section Layout
-   ========================= */
+body,
+* {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+/* Donation Section Layout */
 .donation-section {
   max-width: 800px;
   margin: 0 auto;
-  padding: 120px 20px;
+  padding: 20px 20px;
 }
 
 .donation-paragraph {
@@ -30,19 +33,19 @@
   cursor: pointer;
   border: none;
   border-radius: 8px;
-  background-color: #bebebe;
+  background-color: #deebf7;
   color: black;
   transition: background-color 0.3s;
 }
 
 .donation-frequency-button:hover,
 .donation-frequency-button:focus {
-  background-color: #0762ff;
+  background-color: #4292c6;
   color: white;
 }
 
 .donation-frequency-button.active {
-  background-color: #0762ff;
+  background-color: #4292c6;
   color: white;
 }
 
@@ -71,19 +74,20 @@
   font-size: 20px;
   border-radius: 10px;
   border: none;
-  background-color: #bebebe;
+  background-color: #deebf7;
   color: black;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .donation-option-button:hover {
-  background-color: #0762ff;
+  background-color: #4292c6;
   color: white;
 }
 
 .donation-option-button.active {
-  background-color: #0762ff;
+  background-color: #4292c6;
   color: white;
 }
 
@@ -97,7 +101,7 @@
   align-items: center;
   grid-column: 1 / -1;
   width: 100%;
-  border: 2px solid #0762ff;
+  border: 2px solid #4292c6;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 15px 25px;
@@ -106,13 +110,13 @@
 
 .custom-amount-wrapper:focus-within {
   border-color: #004ad9;
-  box-shadow: 0 0 5px #0762ff;
+  box-shadow: 0 0 5px #4292c6;
 }
 
 .custom-amount-symbol {
   margin-right: 8px;
   font-size: 20px;
-  color: #0762ff;
+  color: #4292c6;
 }
 
 .custom-amount-input {
@@ -137,12 +141,44 @@
   font-size: 22px;
   border: none;
   border-radius: 10px;
-  background-color: #0762ff;
+  background-color: #4292c6;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 .donate-button:hover {
-  background-color: #004ad9;
+  background-color: #08519c;
+}
+
+/* Banner */
+.donation-banner {
+  width: 100%;
+  margin: 0;
+  padding-top: 75px;
+}
+
+.donation-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Additional Information Section */
+.donation-info {
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.donation-info li {
+  text-align: left;
+  list-style-type: circle;
+}
+
+/* Divider line styling */
+.info-divider {
+  margin: 15px auto;
+  width: 90%;
 }
