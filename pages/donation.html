@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donation</title>
 
-    <link rel="stylesheet" href="assets/css/donation.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/donation.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
 
-  <header>Header soon to be implemented</header>
+  <header>
+    <nav class="nav nav-top">
+      <a class="logo-btn" href="../index.html">
+        <img src="../assets/images/TheFlowState.png" alt="Home"
+      /></a>
+    </nav>
+    <nav class="nav nav-bottom">
+      <a href="../pages/About.html">About</a>
+      <a href="../pages/connect.html">Connect</a>
+      <a href="../pages/donation.html">Donate</a>
+      <a href="../pages/resources.html">Resources</a>
+    </nav>
+  </header>
 
   <body>
-    <h1>Make a Donation</h1>
+    <div class="donation-banner">
+      <img
+        src="https://healthycampus.ucr.edu/sites/default/files/hc_built-environment-banner_healthy-beverage-Initiative-.JPG"
+        class="donation-banner-img"
+      />
+    </div>
 
     <section class="donation-section">
+      <p class="donation-paragraph">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+        quidem natus molestiae quod atque animi veniam eligendi repellat? Eos
+        beatae repudiandae cupiditate delectus quod quam possimus exercitationem
+        ducimus corrupti quos?
+      </p>
+
       <div class="donation-frequency">
         <button
           class="donation-frequency-button"
@@ -37,35 +61,89 @@
       </div>
 
       <div class="donation-options">
-        <!-- Donation Options-Monthly-->
         <div class="monthly-options" id="monthly-options">
-          <button class="donation-option-button">$10</button>
-          <button class="donation-option-button">$25</button>
-          <button class="donation-option-button">$50</button>
-          <button class="donation-option-button">$100</button>
-          <button class="donation-option-button">Custom Amount</button>
+          <p class="donation-paragraph">Select a donation amount:</p>
+          <div class="donation-grid">
+            <button class="donation-option-button">$10</button>
+            <button class="donation-option-button">$25</button>
+            <button class="donation-option-button">$50</button>
+            <button class="donation-option-button">$100</button>
+            <button class="donation-option-button custom-amount">
+              Custom Amount
+            </button>
+          </div>
         </div>
 
         <div class="yearly-options" id="yearly-options">
-          <button class="donation-option-button">$100</button>
-          <button class="donation-option-button">$250</button>
-          <button class="donation-option-button">$500</button>
-          <button class="donation-option-button">$1000</button>
-          <button class="donation-option-button">Custom Amount</button>
+          <p class="donation-paragraph">Select a donation amount:</p>
+          <div class="donation-grid">
+            <button class="donation-option-button">$100</button>
+            <button class="donation-option-button">$250</button>
+            <button class="donation-option-button">$500</button>
+            <button class="donation-option-button">$1000</button>
+            <button class="donation-option-button custom-amount">
+              Custom Amount
+            </button>
+          </div>
         </div>
 
         <div class="one-time-options" id="one-time-options">
-          <button class="donation-option-button">$20</button>
-          <button class="donation-option-button">$50</button>
-          <button class="donation-option-button">$100</button>
-          <button class="donation-option-button">$200</button>
-          <button class="donation-option-button">Custom Amount</button>
+          <p class="donation-paragraph">Select a donation amount:</p>
+          <div class="donation-grid">
+            <button class="donation-option-button">$20</button>
+            <button class="donation-option-button">$50</button>
+            <button class="donation-option-button">$100</button>
+            <button class="donation-option-button">$200</button>
+            <button class="donation-option-button custom-amount">
+              Custom Amount
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div class="donation-submit">
+        <button id="donate-button" class="donate-button">Donate</button>
       </div>
     </section>
 
-    <script src="assets/js/donation.js"></script>
+    <section class="donation-info">
+      <h3>Additional Information</h3>
+      <hr class="info-divider" />
+      <p>
+        <ul class="info-list">
+          <li>Your donations are tax-deductible.</li>
+          <li>
+            We use secure payment processing to ensure your information is
+            safe.
+          </li>
+          <li>
+            You can change or cancel your recurring donations at any time. Please email us for assistance at ...
+          </li>
+      </p>
+    </section>
+
+    <script src="../assets/js/donation.js"></script>
   </body>
 
-  <footer> Footer soon to be implemented</footer>
+  <footer>
+    <div class="footer-flexbox">
+      <section class="footer footer-logo">
+        <h1>The Flow State</h1>
+        <!-- Tagline -->
+        <h5>"Keeping NC in Flow"</h5>
+      </section>
+
+      <section class="footer footer-pages">
+        <h2>Pages</h2>
+        <a href="pages/About.html">About</a>
+        <a href="pages/connect.html">Connect</a>
+        <a href="pages/donation.html">Donate</a>
+        <a href="pages/resources.html">Resources</a>
+      </section>
+
+      <section class="footer footer-socials">
+        <h2>Find us on...</h2>
+      </section>
+    </div>
+  </footer>
 </html>
