@@ -637,22 +637,35 @@ ul li {
 /* Resource Three Article's */
 
 /* Article One; What Is PFAS... */
-.Pfasbody{
+.Resbody{
   background: linear-gradient(to bottom, #ffffff, #c6dbef, #9ecae1, #7894b0);
 
 }
 
 
-.RecArticle {
+.ResArticle {
   color: #08306b;
-  padding: 5.5em 2em;
+  padding: 5.7em 2em;
   text-align: center;
   font-size: large;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
-}
 
-.Recat{
-  padding-top: 2em;
-  text-align: left;
-  margin-left: 4em;
+}
+.Resat{
+  padding-top: 1em;
+}
+.Resprev{
+  display: flex;
+  justify-content: left;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;;
+  font-size: 0.9em;
+  font-weight:500;
+  background: none;
+  border: none;
+  color: #08306b;
+  margin: 2.7em 0;
+  transition: color 0.2s ease;
+}
+.Resprev:hover{
+color: #4c95c0;
 }
