@@ -124,17 +124,17 @@ footer section {
 }
 
 .motto-overlay p {
-    font-family: 'Caveat','Zalando Sans SemiExpanded', sans-serif;
-    text-align: center;
-    align-items: center;
-    color: #f7fbff;
-    margin: 0;
-    padding: 400px 0px;
-    font-size: 70px;
+  font-family: 'Caveat','Zalando Sans SemiExpanded', sans-serif;
+  text-align: center;
+  align-items: center;
+  color: #f7fbff;
+  margin: 0;
+  padding: 400px 0px;
+  font-size: 70px;
 }
 
 .home-container {
-    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
 }
 
 .home-container.about {
@@ -149,16 +149,6 @@ footer section {
   /* 0  15px 30px 50px #2f3538;   bottom shadow */
 }
 
-.home-container.get-involved {
-  background-color: #c6dbef;
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-
 .about-overlay {
   /* background-color: #c6dbef; */
   text-align: center;
@@ -171,15 +161,15 @@ footer section {
 }
 
 .about-overlay h2{
-    color: #9ecae1;
-    text-decoration: underline #9ecae1 2px;
-    text-underline-offset: 10px;
-    padding-bottom: 10px;
+  color: #9ecae1;
+  text-decoration: underline #9ecae1 2px;
+  text-underline-offset: 10px;
+  padding-bottom: 10px;
 }
 
 .about-overlay p{
-    font-size: 20px;
-    padding-bottom: 50px;
+  font-size: 20px;
+  padding-bottom: 50px;
 }
 
 .about-overlay.about-btn {
@@ -191,15 +181,122 @@ footer section {
 }
 
 .about-overlay.about-btn:hover {
-    background-color: #9ecae1;
-    transform: scale(1.05);
+  background-color: #9ecae1;
+  transform: scale(1.05);
 }
 
+.home-container.get-involved {
+  background-color: #c6dbef;
+  background: linear-gradient(
+    to bottom,
+    #c6dbef 0%,     /* your container color */
+    #c6dbef 70%,    /* solid color for most of the height */
+    #f7fbff 100%    /* fades to page background */
+  );
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 0px;
+}
+
+.get-involved-overlay {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  /* width: 900px;
+  height: 500px;
+  border-radius: 10px; */
+}
+
+.get-involved-overlay h2 {
+  color: #08306b;
+}
+
+.slide-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px; 
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6baed6;
+  text-align: center;
+  width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #9ecae1;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.active, .dot:hover {
+  background-color: #08519c;
+}
+
+.back, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background-color: rgba(8, 82, 156, 0.462);
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.back {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+.back:hover, .next:hover {
+  background-color: rgba(8, 81, 156, 0.8);
+}
 
 
 .home-container.spacing {
   width: 100%;
-  height: 400px;
+  height: 100px;
 }
 /* ------- END HOME PAGE -------*/
 

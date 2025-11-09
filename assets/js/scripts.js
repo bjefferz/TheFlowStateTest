@@ -25,3 +25,40 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(nextSlide, 8000);
     showSlide(index);
 });
+
+
+// ----- Home Page Slides -----
+let mainSlideIndex = 1;
+
+document.addEventListener("DOMContentLoaded", function () {
+    showSlides(mainSlideIndex);
+});
+
+function plusSlide(n) {
+    showSlides(mainSlideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(mainSlideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+  
+    if (n > slides.length) {mainSlideIndex = 1}
+    if (n < 1) {mainSlideIndex = slides.length}
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+  
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[mainSlideIndex-1].style.display = "block";
+    
+    dots[mainSlideIndex-1].className += " active";
+}
