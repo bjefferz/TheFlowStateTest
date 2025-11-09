@@ -524,3 +524,27 @@ ul li {
 /* 481-768 */
 
 /* 0-480 */
+
+
+/* Resource Three Article's */
+
+/* Article One; What Is PFAS... */
+.Pfasbody{
+  background: linear-gradient(to bottom, #ffffff, #c6dbef, #9ecae1, #7894b0);
+
+}
+
+
+.RecArticle {
+  color: #08306b;
+  padding: 5.5em 2em;
+  text-align: center;
+  font-size: large;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.Recat{
+  padding-top: 2em;
+  text-align: left;
+  margin-left: 4em;
+}
