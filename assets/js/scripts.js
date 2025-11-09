@@ -44,7 +44,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("slide");
+    let slides = document.getElementsByClassName("slide-home");
     let dots = document.getElementsByClassName("dot");
   
     if (n > slides.length) {mainSlideIndex = 1}
@@ -55,10 +55,10 @@ function showSlides(n) {
     }
   
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active-home", "");
     }
 
     slides[mainSlideIndex-1].style.display = "block";
     
-    dots[mainSlideIndex-1].className += " active";
+    dots[mainSlideIndex-1].className += " active-home";
 }
