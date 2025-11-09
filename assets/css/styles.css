@@ -579,7 +579,7 @@ ul li {
 }
 
 /* Shows the active testimony slide */
-.testimony.active {
+.testimony.active-a {
   display: block;
   animation: fade 2s ease-in-out;
 }

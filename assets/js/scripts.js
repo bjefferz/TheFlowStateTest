@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let index = 0;
 
     function showSlide(n) {
-        slides.forEach(slide => slide.classList.remove("active")); 
-        slides[n].classList.add("active");
+        slides.forEach(slide => slide.classList.remove("active-a")); 
+        slides[n].classList.add("active-a");
     }
 
     function nextSlide() {
