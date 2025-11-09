@@ -1,10 +1,3 @@
-body,
-* {
-  font-family: "Zalando Sans SemiExpanded", sans-serif;
-  letter-spacing: 0.5px;
-  word-spacing: 1px;
-}
-
 /* Donation Section Layout */
 .donation-section {
   max-width: 800px;
@@ -18,6 +11,9 @@ body,
   font-size: 1.1em;
   line-height: 1.7;
   color: #08306b;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 
 /* Frequency Button Styling */
@@ -115,11 +111,6 @@ body,
   font-size: 1.2em;
 }
 
-.custom-amount-wrapper:focus-within {
-  border-color: #004ad9;
-  box-shadow: 0 0 5px #4292c6;
-}
-
 .custom-amount-symbol {
   margin-right: 8px;
   font-size: 1.2em;
@@ -207,4 +198,96 @@ body,
   margin-bottom: 1em;
   line-height: 1.7;
   letter-spacing: 0.5px;
+}
+
+/* Billing Form Popup */
+.billing {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.billing-content {
+  background: #f7fbff;
+  padding: 2em;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.billing-content h2 {
+  margin-bottom: 1em;
+  color: #08306b;
+}
+
+.billing-content label {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 0.95em;
+  color: #08306b;
+}
+
+.billing-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.billing-content button {
+  margin-top: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#close-billing {
+  background: #ccc;
+  margin-left: 10px;
+}
+
+#billing-form button[type="submit"] {
+  background: #08306b;
+  color: #f7fbff;
+}
+
+/* Thank You Page Section */
+.thankyou-section {
+  text-align: center;
+  padding: 10em 2em;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.thankyou-title {
+  color: #08306b;
+}
+
+.redirect-note {
+  font-size: smaller;
+  padding-top: 2em;
+}
+
+.return-home-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #08306b;
+  color: #f7fbff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.return-home-btn:hover {
+  background-color: #08519c;
 }
