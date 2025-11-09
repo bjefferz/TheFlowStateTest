@@ -616,8 +616,19 @@ ul li {
 
 /*END OF ABOUT PAGE STYLING*/
 
-/* 769-1297 */
+/* ----- RESPONSIIVE BREAKPOINTS ----- */
+/* 769px–1297px: Tablets and small laptops */
+@media (min-width: 769px) and (max-width: 1297px) {
+  /* */
+}
 
-/* 481-768 */
+/* 481px–768px: Large phones and small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* */
+}
 
-/* 0-480 */
+/* 0px–480px: Mobile phones */
+@media (max-width: 480px) {
+  /* */
+}
+
