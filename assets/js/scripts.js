@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let index = 0;
 
     function showSlide(n) {
-        slides.forEach(slide => slide.classList.remove("active")); 
-        slides[n].classList.add("active");
+        slides.forEach(slide => slide.classList.remove("active-a")); 
+        slides[n].classList.add("active-a");
     }
 
     function nextSlide() {
@@ -44,7 +44,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("slide");
+    let slides = document.getElementsByClassName("slide-home");
     let dots = document.getElementsByClassName("dot");
   
     if (n > slides.length) {mainSlideIndex = 1}
@@ -55,10 +55,10 @@ function showSlides(n) {
     }
   
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active-home", "");
     }
 
-    slides[mainSlideIndex-1].style.display = "block";
+    slides[mainSlideIndex-1].style.display = "flex";
     
-    dots[mainSlideIndex-1].className += " active";
+    dots[mainSlideIndex-1].className += " active-home";
 }
