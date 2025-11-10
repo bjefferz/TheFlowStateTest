@@ -233,4 +233,20 @@ billingForm.addEventListener("submit", (e) => {
 });
 
 
-// Everything below is mobile
+/* Everything below is mobile */
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+// Toggle open/close when hamburger is clicked
+hamburger.addEventListener("click", (e) => {
+  e.stopPropagation(); // prevent click from bubbling up
+  navMenu.classList.toggle("show");
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+  // if click is NOT inside navMenu or hamburger
+  if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    navMenu.classList.remove("show");
+  }
+});

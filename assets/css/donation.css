@@ -305,5 +305,103 @@
   background-color: #08519c;
 }
 
-/* Everything below is mobile */
+/* ----------------------
+Everything below is mobile/tablet 
+---------------------- */
 
+.hamburger {
+  display: none; /* hide on desktop by default */
+}
+
+/* 769px–1297px: Tablets and small laptops */
+@media (min-width: 769px) and (max-width: 1297px) {
+}
+
+/* 481px–768px: Large phones and small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* 0px–480px: Mobile phones (iPhones, Pixel 7, Samsung Galaxy S8/S20) */
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    height: 60px;
+  }
+
+  .nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .logo-btn img {
+    width: 50px;
+  }
+
+  .logo-btn p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* Hamburger */
+  .hamburger {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .hamburger span {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #08306b;
+    left: 0;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 0;
+  }
+  .hamburger span:nth-child(2) {
+    top: 8px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 16px;
+  }
+
+  /* Nav links */
+  .nav-bottom {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #f7fbff;
+    z-index: 999;
+  }
+
+  .nav-bottom.show {
+    display: flex;
+  }
+
+  .nav-bottom a {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+}
