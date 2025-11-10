@@ -372,13 +372,15 @@ footer section {
   box-sizing: border-box;
   background: linear-gradient(#6baed6, #f7fbff);
   font-family: "Zalando Sans SemiExpanded", sans-serif;
+  flex: 1;
 }
 
 .contact-container {
-  height: 100vh;
+  min-height: calc(100vh - 75px);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 2rem 1rem; 
 }
 
 #contact-page-main-img {
@@ -421,7 +423,7 @@ footer section {
   outline: none;
   padding-left: 25px;
   font-weight: 450;
-  color: #6baed6;
+  color: rgb(132, 128, 128);
   border-radius: 50px;
 }
 
@@ -429,7 +431,9 @@ footer section {
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
 }
+
 
 .contact-left textarea::placeholder {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
@@ -457,16 +461,563 @@ footer section {
   cursor: pointer;
 }
 
+.contact-left button:hover {
+  background: linear-gradient(270deg, #3d7a9f, #667a94);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 149, 192, 0.4);
+}
+
 .contact-left button img {
   height: 15px;
 }
 
+.thankyou-body {
+  padding: 75px 0 0 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(#6baed6, #f7fbff);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.thankyou-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.thankyou-icon {
+  margin-bottom: 1.5rem;
+  animation: checkmark 0.8s ease-in-out;
+}
+
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.thankyou-content h1 {
+  color: #2d6e93;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.thankyou-message {
+  color: #08306b;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.thankyou-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thankyou-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.thankyou-btn.primary {
+  color: #fff;
+  background: linear-gradient(270deg, #4c95c0, #7894b0);
+  border: none;
+}
+
+.thankyou-btn.primary:hover {
+  background: linear-gradient(270deg, #3d7a9f, #667a94);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 149, 192, 0.4);
+}
+
+.thankyou-btn.secondary {
+  color: #2d6e93;
+  background: #fff;
+  border: 2px solid #2d6e93;
+}
+
+.thankyou-btn.secondary:hover {
+  background: #2d6e93;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 110, 147, 0.3);
+}
+
+.thankyou-image {
+  flex-shrink: 0;
+}
+
+.thankyou-image img {
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 6em 0;
+    min-height: 300px;
+  }
+  
+  .footer-flexbox {
+    padding-top: 8em;
+    gap: 2rem;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  footer section {
+    padding: 0 2em;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (481px - 767px) */
+@media (max-width: 767px) {
+  footer {
+    padding: 3em 0;
+    min-height: auto;
+  }
+  
+  .footer-flexbox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2em;
+    gap: 2rem;
+  }
+  
+  footer section {
+    padding: 0 1em;
+  }
+  
+  .footer-pages {
+    align-items: center;
+  }
+}
+
+/* Mobile Portrait (up to 480px) */
+@media (max-width: 480px) {
+  footer {
+    padding: 2em 0;
+  }
+  
+  .footer-flexbox {
+    padding-top: 1.5em;
+    gap: 1.5rem;
+  }
+  
+  .footer-logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-logo h5 {
+    font-size: 0.9rem;
+  }
+  
+  .footer-pages h2,
+  .footer-socials h2 {
+    font-size: 1.2rem;
+  }
+  
+  footer section {
+    padding: 0 0.5em;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  footer {
+    padding: 6em 0;
+    min-height: 300px;
+  }
+  
+  .footer-flexbox {
+    padding-top: 8em;
+    gap: 2rem;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  footer section {
+    padding: 0 2em;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (481px - 767px) */
+@media (max-width: 767px) {
+  footer {
+    padding: 3em 0;
+    min-height: auto;
+  }
+  
+  .footer-flexbox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2em;
+    gap: 2rem;
+  }
+  
+  footer section {
+    padding: 0 1em;
+  }
+  
+  .footer-pages {
+    align-items: center;
+  }
+}
+
+/* Mobile Portrait (up to 480px) */
+@media (max-width: 480px) {
+  footer {
+    padding: 2em 0;
+  }
+  
+  .footer-flexbox {
+    padding-top: 1.5em;
+    gap: 1.5rem;
+  }
+  
+  .footer-logo h1 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-logo h5 {
+    font-size: 0.9rem;
+  }
+  
+  .footer-pages h2,
+  .footer-socials h2 {
+    font-size: 1.2rem;
+  }
+  
+  footer section {
+    padding: 0 0.5em;
+  }
+}
+
+/* ========================================
+   CONTACT PAGE RESPONSIVE
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .contact-container {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .contact-inputs {
+    width: 350px;
+  }
+  
+  #contact-page-main-img {
+    width: 120%;
+    max-width: 400px;
+  }
+}
+
+/* Mobile & Small Tablets */
 @media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    min-height: auto; /* IMPORTANT: Remove fixed height on mobile */
+    padding: 2rem 1rem;
+  }
+  
   .contact-inputs {
     width: 80vw;
+    max-width: 400px;
   }
+  
   .contact-right {
     display: none;
+  }
+  
+  .contact-left {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .contact-body {
+    padding-top: 75px;
+  }
+  
+  .contact-container {
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-left-title h2 {
+    font-size: 32px;
+  }
+  
+  .contact-inputs {
+    width: 90vw;
+    padding-left: 20px;
+  }
+  
+  .contact-left button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ========================================
+   THANK YOU PAGE - Complete Responsive CSS
+   Add this to your styles.css
+   ======================================== */
+
+.thankyou-body {
+  padding: 75px 0 0 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(#6baed6, #f7fbff);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.thankyou-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.thankyou-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.thankyou-icon {
+  margin-bottom: 1.5rem;
+  animation: checkmark 0.8s ease-in-out;
+}
+
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.thankyou-content h1 {
+  color: #2d6e93;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.thankyou-message {
+  color: #08306b;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.thankyou-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thankyou-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+.thankyou-btn.primary {
+  color: #fff;
+  background: linear-gradient(270deg, #4c95c0, #7894b0);
+  border: none;
+}
+
+.thankyou-btn.primary:hover {
+  background: linear-gradient(270deg, #3d7a9f, #667a94);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 149, 192, 0.4);
+}
+
+.thankyou-btn.secondary {
+  color: #2d6e93;
+  background: #fff;
+  border: 2px solid #2d6e93;
+}
+
+.thankyou-btn.secondary:hover {
+  background: #2d6e93;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 110, 147, 0.3);
+}
+
+.thankyou-image {
+  flex-shrink: 0;
+}
+
+.thankyou-image img {
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  mask-image: radial-gradient(circle at center, black 50%, transparent 100%);
+}
+
+
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .thankyou-container {
+    gap: 3rem;
+    padding: 2.5rem 2rem;
+  }
+  
+  .thankyou-content h1 {
+    font-size: 42px;
+  }
+  
+  .thankyou-image img {
+    width: 350px;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (481px - 767px) */
+@media (max-width: 767px) {
+  .thankyou-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+  
+  .thankyou-content {
+    max-width: 100%;
+  }
+  
+  .thankyou-content h1 {
+    font-size: 36px;
+  }
+  
+  .thankyou-message {
+    font-size: 16px;
+  }
+  
+  .thankyou-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .thankyou-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .thankyou-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Mobile Portrait (up to 480px) */
+@media (max-width: 480px) {
+  .thankyou-body {
+    padding: 75px 0 0 0;
+  }
+  
+  .thankyou-container {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .thankyou-icon svg {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .thankyou-content h1 {
+    font-size: 28px;
+  }
+  
+  .thankyou-message {
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .thankyou-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+  
+  .thankyou-image img {
+    max-width: 100%;
   }
 }
 
