@@ -813,7 +813,8 @@ color: #4c95c0;
     gap: 60px;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin-top: 8em;
+    margin: 8em auto 0;
+    padding: 0 1rem;
 }
 .PBoxArticle{
     text-align: center;
@@ -824,10 +825,10 @@ color: #4c95c0;
     max-width: 335px;
     overflow: hidden;
     color: #08306b;
-
-    p{ padding: 1em; 
-    }
 }
+.PBoxArticle p{ padding: 1em; 
+    }
+
 img{
   max-width: 100%;
   height: auto;
@@ -873,9 +874,7 @@ img{
 }
 
 
-
-
-/* The 2 Stories Below Article's & PDF Export */
+/* The 2 Stories Below Article's & Including PDF Export */
 
 .ResPdf {
   background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
@@ -888,6 +887,23 @@ img{
   align-items: stretch;
 
 }
+/* @media(min-width:1176px){
+.ResPdf {
+  background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
+  color: #08306b;
+  padding: 0.4em 3em 0 3em;
+  margin: 10em 0 20em 0;
+  text-align: center;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  line-height: 1.7;
+  align-items: stretch;
+
+}} */
+
+
+
+
+
 .ResPdf h2 {
   font-size: 2em;
   text-transform: uppercase;
@@ -965,3 +981,4 @@ img{
   display: inline-block;
   padding-bottom: 0.5em;
 }
+
