@@ -51,9 +51,18 @@ footer section {
     color: #08306b;
 }
 
+.nav.nav-top {
+  height: 75px;
+  align-items: center;
+}
+
 .nav.nav-top img {
   height: 100px;
   object-fit: cover;
+}
+
+.logo-btn {
+  height: 75px;
 }
 
 .nav a:hover {
@@ -1629,8 +1638,6 @@ img{
   .home-container.motto {
     width: 100vw;
     height: 500px;
-    /* background-size: cover; */
-    /* z-index: 10;*/
   }
 
   .motto-overlay {
