@@ -749,26 +749,19 @@ color: #4c95c0;
 
 /* Resource Page */
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70px;
-    /* padding: 2em 0; */
-    height: 1000px;
-}
+
 .threearticle-container{
     display: flex;
     justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
     max-width: 1200px;
-
-
+    margin-top: 8em;
 }
 .PBoxArticle{
     text-align: center;
     background-color: #deebf7;
+    border: 2px solid #6baed6;
     border-radius: 12px;
     vertical-align: top;
     max-width: 335px;
@@ -805,6 +798,7 @@ img{
 
 .PBoxArticle:hover{
     transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
 .PAbt{
     color: #08306b;
@@ -818,5 +812,99 @@ img{
     margin-bottom: 20px;
 }
 .PAbt:hover{
-    background-color: #c6dbef;
+    background-color: #6baed6;
+}
+
+
+
+
+/* The 2 Stories Below Article's & PDF Export */
+
+.ResPdf {
+  background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
+  color: #08306b;
+  padding: 0.4em 3em 0 3em;
+  margin: 10em 0 20em 0;
+  text-align: center;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  line-height: 1.7;
+  align-items: stretch;
+
+}
+.ResPdf h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 3px solid #6baed6;
+  display: inline-block;
+  padding-bottom: 0.3em;
+}
+.Rpdflink{
+  color:#08306b;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Rpdflink:hover{
+  color: #7894b0;
+  text-decoration: underline;
+}
+
+
+
+.ResStory {
+  background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
+  color: #08306b;
+  margin-bottom: 7em;
+  padding: 0.4em 3em 0 3em;
+  text-align: center;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  line-height: 1.7;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 40%);
+  align-items: stretch;
+  column-gap: 2em;
+}
+  
+.ResStory h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 3px solid #6baed6;
+  display: inline-block;
+  padding-bottom: 0.3em;
+}
+
+
+.RStorypic img {
+  padding-top: 1em;
+  object-fit: cover;
+  display: block;
+  inline-size: 75%;   
+  block-size: 91%;
+  border-radius: 30px;
+  
+
+}
+
+.ResStorytwo {
+  background: linear-gradient(to bottom, #f7fbff, #9ecae1, #f7fbff);
+  color: #08306b;
+  margin: 5em 0 12em 0;
+  padding: 0.4em 3em 0 3em;
+  text-align: center;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  line-height: 1.7;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 40%);
+  align-items: stretch;
+  column-gap: 2em;
+}
+
+.ResStorytwo h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 3px solid #6baed6;
+  display: inline-block;
+  padding-bottom: 0.5em;
 }
