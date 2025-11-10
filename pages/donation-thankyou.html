@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Thank You For Your Donation! | The Flow State</title>
+    <link
+      rel="icon"
+      type="TheFlowState Custom Tab Icon"
+      href="../assets/Images/TheFlowState.png"
+    />
+
+    <link rel="stylesheet" href="../assets/css/donation.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <header>
+    <nav class="nav nav-top">
+      <a class="logo-btn" href="../index.html">
+        <img src="../assets/images/TheFlowState.png" alt="Home" />
+      </a>
+    </nav>
+    <nav class="nav nav-bottom">
+      <a href="../pages/About.html">About</a>
+      <a href="../pages/connect.html">Connect</a>
+      <a href="../pages/donation.html">Donate</a>
+      <a href="../pages/resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <body>
+    <section class="donation-section thankyou-section">
+      <h1 class="thankyou-title">Thank You!</h1>
+      <p>
+        Your <strong id="frequency"></strong> donation of
+        <strong id="amount"></strong> has been processed.
+      </p>
+      <p><br>Payment Method: Credit/Debit Card</p>
+      <p class="redirect-note">
+        You will be redirected in 10 seconds...<br />
+        Don't want to wait?
+      </p>
+      <a href="../index.html" class="return-home-btn">Return Home</a>
+    </section>
+
+    <section class="donation-info">
+      <h2>Additional Information</h2>
+      <ul class="info-list">
+        <li>The Flow State is a 501(c)(3) nonprofit organization.</li>
+        <li>
+          Cancellation policy: If you choose to make a recurring donation,
+          please note that you may cancel your recurring donation at any time by
+          contacting
+          <a href="mailto:donation@theflowstate.org"
+            >donation@theflowstate.org</a
+          >
+        </li>
+        <li>
+          The Flow State was founded in 2025 by a dedicated group of NC
+          residents to fight the lack of potable water severely impacting local
+          health. Learn more
+          <a href="../pages/About.html">here</a>.
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const frequency = params.get("frequency");
+      const amount = params.get("amount");
+
+      if (!frequency || !amount) {
+        window.location.href = "donation.html";
+      } else {
+        document.getElementById("frequency").textContent = frequency;
+        document.getElementById("amount").textContent = "$" + amount;
+      }
+
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 10000); // 1000 = 1 second, so 10000 = 10 seconds
+    </script>
+  </body>
+
+  <footer>
+    <div class="footer-flexbox">
+      <section class="footer footer-logo">
+        <h1>The Flow State</h1>
+        <!-- Tagline -->
+        <!-- <h5>"Keeping NC in Flow"</h5> -->
+        <h5>“When Water Flows, Communities Thrive”</h5>
+      </section>
+
+      <section class="footer footer-pages">
+        <h2>Pages</h2>
+        <a href="index.html">Home</a>
+        <a href="pages/About.html">About</a>
+        <a href="pages/connect.html">Connect</a>
+        <a href="pages/donation.html">Donate</a>
+        <a href="pages/resources.html">Resources</a>
+      </section>
+
+      <section class="footer footer-socials">
+        <h2>Find us on...</h2>
+        <div class="socials-container">
+          <a class="instagram-btn" href="https://www.instagram.com/">
+            <img
+              src="../assets/Images/Instagram.png"
+              alt="Instagram"
+            />
+          </a>
+          <a class="fb-btn" href="https://www.instagram.com/">
+            <img src="../assets/Images/FB.png" alt="Facebook" />
+          </a>
+        </div>
+      </section>
+    </div>
+  </footer>
+</html>

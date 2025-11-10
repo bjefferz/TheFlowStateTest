@@ -1,8 +1,3 @@
-body,
-* {
-  font-family: "Zalando Sans SemiExpanded", sans-serif;
-}
-
 /* Donation Section Layout */
 .donation-section {
   max-width: 800px;
@@ -13,6 +8,12 @@ body,
 .donation-paragraph {
   display: block;
   text-align: center;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #08306b;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 
 /* Frequency Button Styling */
@@ -29,24 +30,25 @@ body,
 
 .donation-frequency-button {
   padding: 10px 20px;
-  font-size: 30px;
+  font-size: 1.4em;
   cursor: pointer;
   border: none;
   border-radius: 8px;
   background-color: #deebf7;
-  color: black;
+  color: #08306b;
   transition: background-color 0.3s;
+  letter-spacing: 1px;
 }
 
 .donation-frequency-button:hover,
 .donation-frequency-button:focus {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 .donation-frequency-button.active {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 /* Donation Options Grid */
@@ -71,24 +73,25 @@ body,
 /* Donation Option Buttons */
 .donation-option-button {
   padding: 15px 25px;
-  font-size: 20px;
+  font-size: 1.2em;
   border-radius: 10px;
   border: none;
   background-color: #deebf7;
-  color: black;
+  color: #08306b;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: bold;
+  letter-spacing: 0.8px;
 }
 
 .donation-option-button:hover {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 .donation-option-button.active {
   background-color: #4292c6;
-  color: white;
+  color: #f7fbff;
 }
 
 .donation-option-button.custom-amount {
@@ -105,26 +108,22 @@ body,
   border-radius: 10px;
   box-sizing: border-box;
   padding: 15px 25px;
-  font-size: 20px;
-}
-
-.custom-amount-wrapper:focus-within {
-  border-color: #004ad9;
-  box-shadow: 0 0 5px #4292c6;
+  font-size: 1.2em;
 }
 
 .custom-amount-symbol {
   margin-right: 8px;
-  font-size: 20px;
+  font-size: 1.2em;
   color: #4292c6;
 }
 
 .custom-amount-input {
   flex: 1;
   border: none;
-  font-size: 20px;
+  font-size: 1.2em;
   outline: none;
   box-sizing: border-box;
+  letter-spacing: 0.5px;
 }
 
 .custom-amount-input::-webkit-outer-spin-button,
@@ -138,14 +137,15 @@ body,
   display: block;
   margin: 20px auto;
   padding: 15px 40px;
-  font-size: 22px;
+  font-size: 1.3em;
   border: none;
   border-radius: 10px;
-  background-color: #4292c6;
-  color: white;
+  background-color: #08306b;
+  color: #f7fbff;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .donate-button:hover {
@@ -165,20 +165,129 @@ body,
   display: block;
 }
 
-/* Additional Information Section */
+/* Additional Info */
 .donation-info {
-  margin: 0 auto;
-  padding: 20px 20px;
+  background-color: #e3f2fd;
+  padding: 4em 2em;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.donation-info h2 {
+  color: #08306b;
+  margin-bottom: 1.5em;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+.donation-info ul {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
 }
 
 .donation-info li {
-  text-align: left;
-  list-style-type: circle;
+  list-style-type: disc;
+  list-style-position: outside;
+  font-size: 1em;
+  color: #08306b;
+  margin-bottom: 1em;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
 }
 
-/* Divider line styling */
-.info-divider {
-  margin: 15px auto;
-  width: 90%;
+/* Billing Form Popup */
+.billing {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.billing-content {
+  background: #f7fbff;
+  padding: 2em;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.billing-content h2 {
+  margin-bottom: 1em;
+  color: #08306b;
+}
+
+.billing-content label {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 0.95em;
+  color: #08306b;
+}
+
+.billing-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.billing-content button {
+  margin-top: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#close-billing {
+  background: #ccc;
+  margin-left: 10px;
+}
+
+#billing-form button[type="submit"] {
+  background: #08306b;
+  color: #f7fbff;
+}
+
+/* Thank You Page Section */
+.thankyou-section {
+  text-align: center;
+  padding: 10em 2em;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.thankyou-title {
+  color: #08306b;
+}
+
+.redirect-note {
+  font-size: smaller;
+  padding-top: 2em;
+}
+
+.return-home-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #08306b;
+  color: #f7fbff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.return-home-btn:hover {
+  background-color: #08519c;
 }

@@ -58,7 +58,7 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active-home", "");
     }
 
-    slides[mainSlideIndex-1].style.display = "block";
+    slides[mainSlideIndex-1].style.display = "flex";
     
     dots[mainSlideIndex-1].className += " active-home";
 }
