@@ -62,3 +62,18 @@ function showSlides(n) {
     
     dots[mainSlideIndex-1].className += " active-home";
 }
+
+// ----- Hamburger Menu -----
+const hamburger = document.getElementById("hamberger-nav");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", (e) => {
+  e.stopPropagation();
+  navMenu.classList.toggle("show");
+});
+
+document.addEventListener("click", (e) => {
+  if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    navMenu.classList.remove("show");
+  }
+});
