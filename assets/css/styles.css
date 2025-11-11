@@ -430,12 +430,12 @@ footer section {
 }
 
 .contact-left-title h2 {
-  font-weight: 550;
-  color: #2d6e93;
+  font-weight: 650;
+  color: #08306b;
   font-size: 40px;
   margin-bottom: 5px;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
-  border-bottom: 3px solid #6baed6
+  border-bottom: 5px solid #63abd5
 }
 
 .contact-left-title hr {
