@@ -1,8 +1,11 @@
 # TheFlowState
 Code for Justice
 
-# Project Overview:
+## Project Overview:
+...
 
-# Features
+## Features
+...
 
-# Usage Guide
+## Usage Guide
+...
