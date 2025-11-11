@@ -21,33 +21,41 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
 
-  <header>
-    <nav class="nav nav-top">
-      <a class="logo-btn" href="../index.html">
-        <img src="../assets/images/TheFlowState.png" alt="Home" />
-      </a>
-    </nav>
-    <nav class="nav nav-bottom">
-      <a href="../pages/About.html">About</a>
-      <a href="../pages/connect.html">Connect</a>
-      <a href="../pages/donation.html">Donate</a>
-      <a href="../pages/resources.html">Resources</a>
-    </nav>
-  </header>
-  
   <body>
+    <header>
+      <!-- JS Link -->
+      <script src="../assets/js/scripts.js" defer></script>
+      <script src="../assets/js/donation.js" defer></script>
+
+      <nav class="nav nav-top">
+        <a class="logo-btn" href="index.html">
+          <img src="../assets/Images/TheFlowState.png" alt="Home" />
+          <p>The Flow State</p>
+        </a>
+
+        <!-- Unicode hamburger -->
+        <button id="hamberger-nav" class="hamburger">&#9776;</button>
+      </nav>
+
+      <nav id="nav-menu" class="nav nav-bottom">
+        <a href="../pages/About.html">About</a>
+        <a href="../pages/connect.html">Connect</a>
+        <a href="../pages/donation.html">Donate</a>
+        <a href="../pages/resources.html">Resources</a>
+      </nav>
+    </header>
     <section class="donation-section thankyou-section">
       <h1 class="thankyou-title">Thank You!</h1>
       <p>
         Your <strong id="frequency"></strong> donation of
         <strong id="amount"></strong> has been processed.
       </p>
-      <p><br>Payment Method: Credit/Debit Card</p>
+      <p><br />Payment Method: Credit/Debit Card</p>
       <p class="redirect-note">
         You will be redirected in 10 seconds...<br />
         Don't want to wait?
       </p>
-      <a href="../index.html" class="return-home-btn">Return Home</a>
+      <a href="index.html" class="return-home-btn">Return Home</a>
     </section>
 
     <section class="donation-info">
@@ -84,7 +92,7 @@
       }
 
       setTimeout(() => {
-        window.location.href = "../index.html";
+        window.location.href = "../pages/index.html";
       }, 10000); // 1000 = 1 second, so 10000 = 10 seconds
     </script>
   </body>
@@ -100,25 +108,28 @@
 
       <section class="footer footer-pages">
         <h2>Pages</h2>
-        <a href="../index.html">Home</a>
-        <a href = "../pages/About.html">About</a>
-        <a href = "../pages/connect.html">Connect</a>
-        <a href = "../pages/donation.html">Donate</a>
-        <a href = "../pages/resources.html">Resources</a>
+        <a href="../pages/index.html">Home</a>
+        <a href="../pages/About.html">About</a>
+        <a href="../pages/connect.html">Connect</a>
+        <a href="../pages/donation.html">Donate</a>
+        <a href="../pages/resources.html">Resources</a>
       </section>
 
       <section class="footer footer-socials">
         <h2>Find us on...</h2>
-          <div class = "socials-container">
-            <a class = "instagram-btn" target="_blank" href = "https://www.instagram.com/">
-                <img src = "../assets/Images/Instagram.png" alt = "Instagram">
-            </a>
-            <a class = "fb-btn" target="_blank" href = "https://www.facebook.com/">
-                <img src = "../assets/Images/FB.png" alt = "Facebook">
-            </a>
-          </div>
+        <div class="socials-container">
+          <a
+            class="instagram-btn"
+            target="_blank"
+            href="https://www.instagram.com/"
+          >
+            <img src="../assets/Images/Instagram.png" alt="Instagram" />
+          </a>
+          <a class="fb-btn" target="_blank" href="https://www.facebook.com/">
+            <img src="../assets/Images/FB.png" alt="Facebook" />
+          </a>
+        </div>
       </section>
-
     </div>
   </footer>
 </html>
