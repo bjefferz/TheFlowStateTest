@@ -3,32 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources</title>
+
+    <!-- Page Icon on Header-->
     <link rel="icon" type="The Flowstate Custom Tab Icon" href="../assets/Images/TheFlowState.png">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap">
+
+    <title>Resources</title>
+
 </head>
 
 <body>
-    <header>
-        <nav class = "nav nav-top">
-            <a class = "logo-btn" href = "../index.html">
-                <img src="../assets/Images/TheFlowState.png" alt = "Home">
-                <p>The Flow State</p>
-            </a>
-        </nav>
+    <!-- JS Link -->
+    <script src = "../assets/js/scripts.js" defer></script>
+    <!--  -->
 
-        <nav class = "nav nav-bottom">
-            <a href = "About.html">About</a>
-            <a href = "connect.html">Connect</a>
-            <a href = "donation.html">Donate</a>
-            <a href = "resources.html">Resources</a>
-        </nav>
+    <header>
+      <nav class = "nav nav-top">
+        <a class = "logo-btn" href = "index.html">
+          <img src="../assets/Images/TheFlowState.png" alt = "Home">
+          <p>The Flow State</p>
+        </a>
+
+        <!-- Unicode hamburger -->
+        <button id = "hamberger-nav" class="hamburger">&#9776;</button>
+      </nav>
+
+      <nav id="nav-menu" class = "nav nav-bottom">
+        <a href = "../pages/About.html">About</a>
+        <a href = "../pages/connect.html">Connect</a>
+        <a href = "../pages/donation.html">Donate</a>
+        <a href = "../pages/resources.html">Resources</a>
+      </nav>
 
     </header>
 
 
   <main>
+    <div class="ResTitle">
+      <h2>Resources</h2>
+    </div>
+
     <div class="threearticle-container">
 
       <div class="PBoxArticle">
@@ -64,7 +85,7 @@
 
 
   <section class="ResPdf">
-    <div>
+    <div class="articleOne">
       <h2>The Safe Drinking Water Act</h2>
       <p>The Safe Drinking Water Act (SDWA) is the primary law that protects public drinking water in the United States. It sets standards for <br>water quality, requires regular testing, and regulates how public water systems treat and manage drinking water. The act also authorizes<br> the EPA to oversee states and water suppliers to ensure water remains safe. You can access the full document using the link provided<br> below.</p>
       <a class="Rpdflink" href="https://www.epa.gov/sites/default/files/2015-04/documents/epa816f04030.pdf" target="_blank">EPA's Safe Drinking Water Act</a>
@@ -73,7 +94,7 @@
 
 
   <section class="ResStory">
-    <div>
+    <div class="articleOne">
       <h2>Brunswisk County</h2>
       <p>These water issues are not just national concerns—they are actively affecting <br>communities such as Brunswick County, North Carolina. Recent testing has<br> shown that portions of the county’s drinking water contain elevated levels of <br>PFAS, including compounds that are not yet fully regulated at the federal <br>level. Local utilities are working to upgrade their treatment systems, including <br>the addition of advanced filtration technologies, to reduce these “forever <br>chemicals” and meet new safety guidelines. The county’s population growth <br>has also placed additional pressure on water supply and infrastructure,<br> leading to seasonal conservation alerts and a greater reliance on treatment<br> facilities to ensure safe &reliable water to the people.</p>
     </div>
@@ -85,14 +106,13 @@
 
 
   <section class="ResStorytwo">
-    <div>
+    <div class="articleOne">
       <h2>Robeson County</h2>
       <p>Robeson County faces its own water-quality challenges, many of which are<br> linked to PFAS contamination. Recent testing has identified elevated PFAS <br>levels in parts of the county’s water system and in areas near landfills and <br>industrial sites. The region’s frequent flooding and extensive agricultural <br>activity also make it especially vulnerable to runoff, allowing fertilizers, waste, <br>and other pollutants to enter nearby waterways. Combined with aging <br>infrastructure in some communities, these factors underscore the importance<br> of reliable water testing and strong treatment practices to ensure long-term<br> water safety.</p>
     </div>
 
     <div class="RStorypic">
       <img src="../assets/Images/Robeson-Lumb.png" alt="Image of Robeson County">
-
     </div>
   </section>
 
@@ -104,12 +124,13 @@
       <section class = "footer footer-logo">
         <h1>The Flow State</h1>
         <!-- Tagline -->
+        <!-- <h5>"Keeping NC in Flow"</h5> -->
         <h5>“When Water Flows, Communities Thrive”</h5>
       </section>
 
       <section class = "footer footer-pages">
         <h2>Pages</h2>
-        <a href="../index.html">Home</a>
+        <a href = "index.html">Home</a>
         <a href = "../pages/About.html">About</a>
         <a href = "../pages/connect.html">Connect</a>
         <a href = "../pages/donation.html">Donate</a>
@@ -118,19 +139,18 @@
 
       <section class = "footer footer-socials">
         <h2>Find us on...</h2>
-          <div class = "socials-container">
-            <a class = "instagram-btn" href = "https://www.instagram.com/">
-                <img src = "../assets/Images/Instagram.png" alt = "Instagram">
-            </a>
-            <a class = "fb-btn" href = "https://www.facebook.com/">
-                <img src = "../assets/Images/FB.png" alt = "Facebook">
-            </a>
-          </div>
+        <div class = "socials-container">
+          <a class = "instagram-btn" href = "https://www.instagram.com/">
+          <img src = "../assets/Images/Instagram.png" alt = "Instagram">
+          </a>
+          <a class = "fb-btn" href = "https://www.facebook.com/">
+          <img src = "../assets/Images/FB.png" alt = "Facebook">
+          </a>
+        </div>
       </section>
     </div>
 
   </footer>
-
 
 </body>
 </html>
