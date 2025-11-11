@@ -40,5 +40,5 @@ The core purpose of this project is to raise awareness of the health impacts ass
 6. **Click 'Go Live' at the bottom right of your VSCode**
 
 
-## License
+## Copyright
 This project is intellectual property of Road to Hire. All codebase is for educational purposes and may not be used for commercial intent without proper permissions.
