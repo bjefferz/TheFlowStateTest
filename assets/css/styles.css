@@ -1019,6 +1019,7 @@ ul li {
     max-width: 335px;
     overflow: hidden;
     color: #08306b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .PBoxArticle p{ padding: 1em; 
     }
