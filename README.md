@@ -7,11 +7,11 @@ Welcome to TheFlowState, a website created for our non-profit organization, deve
 The core purpose of this project is to raise awareness of the health impacts associated with non-potable water and to encourage community action. Our primary goal is serve as an online resource for NC residents who are struggling to access clean, potable water in specific, affected areas.
 
 ## Team Members
-- **Brendan Jefferson (Team Lead)** - Connecct
-- **Tommy-Nam Nguyen** - Donation
-- **Christine Chee** - Index/Home
-- **Marilyn Castro Alonso** - About
-- **Jessica Cruz** - Resources
+- **Brendan Jefferson (Team Lead)**
+- **Tommy-Nam Nguyen**
+- **Christine Chee**
+- **Marilyn Castro Alonso**
+- **Jessica Cruz**
 
 ## Features
 - **Awareness & Content:** Five dedicated pages featuring content serving as a resource to inform users of affected areas the serverity of non-potable water.
