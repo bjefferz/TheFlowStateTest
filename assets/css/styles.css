@@ -1255,9 +1255,9 @@ color: #4c95c0;
 /* ----------------------------------- */
 
 /* ======================================= */
-/* 761px–1297px: Tablets and small laptops */
+/* 761px–1150px: Tablets and small laptops */
 /* ======================================= */
-@media (min-width: 761px) and (max-width: 1297px) {
+@media (min-width: 761px) and (max-width: 1150px) {
   /* ********* General ********* */
   /* ----- Naavigation ----- */
   header {
