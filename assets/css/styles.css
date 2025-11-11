@@ -989,7 +989,7 @@ ul li {
 /*-- Resource Page --*/
 
 .ResTitle h2 {
-  margin-top: 4.5em;
+  padding: 25px;
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1030,7 +1030,6 @@ img{
 }
 .AImage { display:block; }
  .AImage img {
-  /* width: 100%; */
   border-radius: 10px;
   display: block;
   margin-bottom: 10px;
@@ -1057,7 +1056,6 @@ img{
     font-size: 1em;
     background-color: #f7f7f7;
     border: 3px solid #c6dbef;
-    /* border:none; */
     border-radius: 10px;
     padding: 7px;
     cursor: pointer;
@@ -1084,6 +1082,42 @@ img{
   text-align: center;
   font-size: large;
   font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+.ResArticle p{
+  line-height: 1.7;
+}
+.Resat{
+  padding-top: 1em;
+}
+.Resprev{
+  display: flex;
+  justify-content: left;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;;
+  font-size: 0.9em;
+  font-weight:500;
+  background: none;
+  border: none;
+  color: #08306b;
+  margin: 2.5em 0;
+  padding-bottom: 2em;
+  transition: color 0.2s ease;
+}
+.Resprev:hover{
+color: #4c95c0;
+}
+/* ------------------------------ */
+
+/* The 2 Stories Below Article's,  Including PDF Paragraph */
+
+
+/* Act paragraph with PDF link */
+.ResPdf {
+  background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
+  color: #08306b;
+  padding: 0.4em 3em 0 3em;
+  margin: 10em 0 20em 0;
+  text-align: center;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
   line-height: 1.7;
   align-items: stretch;
 
@@ -1106,9 +1140,9 @@ img{
   color: #7894b0;
   text-decoration: underline;
 }
+/* -------------------------- */
 
-
-
+/* 2 County's Below */
 .ResStory {
   background: linear-gradient(to bottom,#f7fbff, #9ecae1, #f7fbff);
   color: #08306b;
@@ -1135,6 +1169,7 @@ img{
 
 .RStorypic img {
   padding-top: 1em;
+  padding: 10px;
   object-fit: cover;
   display: block;
   inline-size: 75%;   
@@ -1166,6 +1201,55 @@ img{
   display: inline-block;
   padding-bottom: 0.5em;
 }
+/* ---------END OF RESOURCE PAGE--------- */
+
+/*-- RESPONSIVE RESOURCE PAGE --*/
+@media (min-width: 769px) and (max-width: 1297px) {
+
+.Resbody br{
+  display: none;
+}
+
+.ResStory, .ResStorytwo{
+  align-items: center;
+}
+
+.RStorypic img {
+  width: 100%;
+  height:auto;
+  padding:25px;
+  margin-top:55px;
+}
+.articleOne br {
+  display: none;
+}
+}
+
+/* -------------------- */
+@media screen and (max-width: 768px) {
+
+.Resbody br{
+  display: none;
+}
+.Resbody p{
+  font-size: 15px;
+}
+.Resbody h1{
+  font-size: 1.5em;
+}
+.ResStory, .ResStorytwo {
+  display: flex;
+  flex-direction: column;
+}
+.RStorypic img{
+  width: 100%;
+  padding:2px;
+}
+.articleOne br{
+  display: none;
+}
+}
+/* -------END OF RESPONSIVE RESOURCE PAGE------------ */
 
 
 /* ----------------------------------- */
@@ -2040,4 +2124,3 @@ img{
   /* ******** END CONTACT PAGE ********* */
   
 }
-
